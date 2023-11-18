@@ -1,17 +1,23 @@
-from fastapi import FastAPI, Response
+# from fastapi import FastAPI, Response
+#
+# # I like to launch directly and not use the standard FastAPI startup
+# import uvicorn
+#
+#
+# app = FastAPI()
+#
+#
+#
+# @app.get("/")
+# async def root():
+#     return {"message": "Hello World, from Eplanner_user!"}
+#
+#
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=8012)
+from app import create_app
 
-# I like to launch directly and not use the standard FastAPI startup
-import uvicorn
-
-
-app = FastAPI()
-
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World, from Eplanner_user!"}
-
+app = create_app()
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8012)
+    app.run(debug=True)
