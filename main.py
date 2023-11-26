@@ -16,9 +16,12 @@
 # if __name__ == "__main__":
 #     uvicorn.run(app, host="0.0.0.0", port=8012)
 from app import create_app
+from app import db
 
 app = create_app()
 
+with app.app_context():
+    db.create_all()
+
 if __name__ == "__main__":
-    from waitress import serve
-    serve(app, host="127.0.0.1", port=8012)
+    app.run(host="0.0.0.0", port=8012, debug=True)

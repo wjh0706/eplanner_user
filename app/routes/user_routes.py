@@ -19,5 +19,5 @@ def user_info(userid):
 @user_blueprint.route('/api/user/<int:userid>/photo', methods=['PUT'])
 def user_photo(userid):
     # Assuming file is sent in request
-    file = request.files['photo']
+    file = request.json
     return jsonify(update_user_photo(userid, file))

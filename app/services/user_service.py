@@ -31,13 +31,13 @@ def update_user_info(userid, data):
     else:
         return {"error": "User not found"}, 404
 
-def update_user_photo(userid, photo_url):
+def update_user_photo(userid, data):
     """
     Updates the profile picture of the user.
     """
     user = User.query.get(userid)
     if user:
-        user.profile_picture = photo_url
+        user.profile_picture = data.get('profile_picture', user.profile_picture)
         db.session.commit()
         return {"message": "Profile photo updated successfully"}
     else:
