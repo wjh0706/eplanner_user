@@ -1,0 +1,28 @@
+name: Python CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8' # Specify the Python version you need
+
+    - name: Install dependencies
+      run: |
+        pip install --no-cache-dir -r requirements.txt
+
+    - name: Run tests
+      run: |
+        # Assuming your tests are set up to be discoverable by unittest
+        python -m unittest discover tests
