@@ -5,7 +5,7 @@ def get_user_info(userid):
     """
     Retrieves user information based on the user ID.
     """
-    user = User.query.get(userid)
+    user = db.session.get(User, userid)
     if user:
         return {
             "userid": user.userid,
@@ -20,7 +20,7 @@ def update_user_info(userid, data):
     """
     Updates user information given the user ID and new data.
     """
-    user = User.query.get(userid)
+    user = db.session.get(User, userid)
     if user:
         user.name = data.get('name', user.name)
         user.email = data.get('email', user.email)
@@ -35,7 +35,7 @@ def update_user_photo(userid, data):
     """
     Updates the profile picture of the user.
     """
-    user = User.query.get(userid)
+    user = db.session.get(User, userid)
     if user:
         user.profile_picture = data.get('profile_picture', user.profile_picture)
         db.session.commit()
