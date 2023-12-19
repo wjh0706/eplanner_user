@@ -4,3 +4,6 @@ Werkzeug>=2.2.2
 pytest==6.2.4
 Flask-Testing==0.8.1
 waitress==2.1.2
+Flask-GraphQL
+graphene
+graphene-sqlalchemy
