@@ -1,4 +1,5 @@
 import pytest
+import json
 from flask import url_for
 from flask_testing import TestCase
 from app import create_app, db
@@ -45,6 +46,22 @@ class TestUserRoutes(TestCase):
     
         self.assert200(response)
         self.assertIn(b'User updated successfully', response.data)
+    
+    def test_create_user_route(self):
+        # Define sample user data
+        sample_user_data = {
+            "name": "New User",
+            "email": "newuser@example.com",
+            "profile_picture": "path/to/picture.jpg"
+        }
 
+        # Make a POST request to the create user endpoint
+        response = self.client.post(url_for('user_blueprint.user_create'), json=sample_user_data)
 
-# Add more test cases as needed
+        # Assertions to ensure the endpoint behaves as expected
+        self.assert200(response)
+        self.assertIn(b'User created successfully', response.data)
+
+        # Optionally, check if the user was indeed created in the database
+        user = User.query.filter_by(email="newuser@example.com").first()
+        self.assertIsNotNone(user, "New user should be created in the database")

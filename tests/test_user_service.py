@@ -1,7 +1,7 @@
 from flask_testing import TestCase
 from app import create_app, db
 from app.models.user import User
-from app.services.user_service import get_user_info, update_user_info
+from app.services.user_service import get_user_info, update_user_info, create_user
 
 class TestUserService(TestCase):
 
@@ -35,6 +35,25 @@ class TestUserService(TestCase):
         updated_user = db.session.get(User, 1)
         self.assertEqual(updated_user.name, 'Updated Name')
         self.assertEqual(updated_user.email, 'updated@example.com')
+    
+    def test_create_user(self):
+        # Define sample user data
+        sample_user_data = {
+            "name": "New User",
+            "email": "newuser@example.com",
+            "profile_picture": "path/to/picture.jpg"
+        }
+
+        # Call the create_user service function
+        response = create_user(sample_user_data)
+
+        # Check the response message
+        self.assertEqual(response['message'], 'User created successfully')
+
+        # Verify that the user was created in the database
+        created_user = User.query.filter_by(email="newuser@example.com").first()
+        self.assertIsNotNone(created_user, "New user should be created in the database")
+        self.assertEqual(created_user.name, "New User")
 
 # To run tests if this script is executed directly
 if __name__ == '__main__':

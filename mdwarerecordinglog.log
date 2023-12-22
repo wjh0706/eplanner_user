@@ -2,3 +2,23 @@
 2023-12-20 01:32:25,401 - app - INFO - Response returned: 200 OK
 2023-12-20 01:32:25,512 - app - INFO - Handling request: GET /favicon.ico
 2023-12-20 01:32:25,513 - app - INFO - Response returned: 404 NOT FOUND
+2023-12-21 22:22:45,010 - app - INFO - Handling request: GET /
+2023-12-21 22:22:45,011 - app - INFO - Response returned: 200 OK
+2023-12-21 22:22:45,076 - app - INFO - Handling request: GET /favicon.ico
+2023-12-21 22:22:45,077 - app - INFO - Response returned: 404 NOT FOUND
+2023-12-21 22:23:59,498 - app - INFO - Handling request: GET /graphql
+2023-12-21 22:23:59,504 - app - INFO - Response returned: 200 OK
+2023-12-21 22:23:59,691 - app - INFO - Handling request: POST /graphql
+2023-12-21 22:23:59,704 - app - INFO - Response returned: 200 OK
+2023-12-21 22:24:06,365 - app - INFO - Handling request: POST /graphql
+2023-12-21 22:24:06,370 - app - INFO - Response returned: 200 OK
+2023-12-21 22:24:25,994 - app - INFO - Handling request: POST /graphql
+2023-12-21 22:24:26,020 - app - INFO - Response returned: 200 OK
+2023-12-22 15:50:08,042 - app - INFO - Handling request: GET /
+2023-12-22 15:50:08,043 - app - INFO - Response returned: 200 OK
+2023-12-22 15:50:08,116 - app - INFO - Handling request: GET /favicon.ico
+2023-12-22 15:50:08,117 - app - INFO - Response returned: 404 NOT FOUND
+2023-12-22 15:50:20,768 - app - INFO - Handling request: GET /user/create
+2023-12-22 15:50:20,769 - app - INFO - Response returned: 404 NOT FOUND
+2023-12-22 15:50:38,443 - app - INFO - Handling request: GET /api/user/create
+2023-12-22 15:50:38,444 - app - INFO - Response returned: 405 METHOD NOT ALLOWED

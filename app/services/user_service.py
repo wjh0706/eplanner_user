@@ -42,3 +42,18 @@ def update_user_photo(userid, data):
         return {"message": "Profile photo updated successfully"}
     else:
         return {"error": "User not found"}, 404
+    
+def create_user(data):
+    """ Creates a new user with the provided data """
+    new_user = User(
+        name=data.get('name'),
+        email=data.get('email'),
+        profile_picture=data.get('profile_picture', None)
+        # Add other fields as necessary
+    )
+    db.session.add(new_user)
+    db.session.commit()
+    return {
+        "userid": new_user.userid,
+        "message": "User created successfully"
+    }
