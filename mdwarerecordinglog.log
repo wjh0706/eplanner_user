@@ -2,3 +2,27 @@
 2023-12-20 01:32:25,401 - app - INFO - Response returned: 200 OK
 2023-12-20 01:32:25,512 - app - INFO - Handling request: GET /favicon.ico
 2023-12-20 01:32:25,513 - app - INFO - Response returned: 404 NOT FOUND
+2023-12-21 20:57:48,833 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 20:57:48,835 - app - INFO - Response returned: 200 OK
+2023-12-21 20:57:48,840 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 20:57:48,840 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 20:57:48,842 - app - INFO - Response returned: 200 OK
+2023-12-21 20:57:48,842 - app - INFO - Response returned: 200 OK
+2023-12-21 21:01:19,378 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 21:01:19,380 - app - INFO - Response returned: 200 OK
+2023-12-21 21:01:19,385 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:01:19,385 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:01:19,386 - app - INFO - Response returned: 200 OK
+2023-12-21 21:01:19,386 - app - INFO - Response returned: 200 OK
+2023-12-21 21:04:32,833 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 21:04:32,835 - app - INFO - Response returned: 200 OK
+2023-12-21 21:04:32,840 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:04:32,840 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:04:32,842 - app - INFO - Response returned: 200 OK
+2023-12-21 21:04:32,842 - app - INFO - Response returned: 200 OK
+2023-12-21 21:05:18,686 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 21:05:18,687 - app - INFO - Response returned: 200 OK
+2023-12-21 21:05:18,692 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:05:18,692 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:05:18,693 - app - INFO - Response returned: 200 OK
+2023-12-21 21:05:18,693 - app - INFO - Response returned: 200 OK
