@@ -26,3 +26,15 @@
 2023-12-21 21:05:18,692 - app - INFO - Handling request: PUT /api/user/1/info
 2023-12-21 21:05:18,693 - app - INFO - Response returned: 200 OK
 2023-12-21 21:05:18,693 - app - INFO - Response returned: 200 OK
+2023-12-21 21:10:45,448 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 21:10:45,450 - app - INFO - Response returned: 200 OK
+2023-12-21 21:10:45,456 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:10:45,456 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:10:45,458 - app - INFO - Response returned: 200 OK
+2023-12-21 21:10:45,458 - app - INFO - Response returned: 200 OK
+2023-12-21 21:11:29,017 - app - INFO - Handling request: GET /api/user/1/info
+2023-12-21 21:11:29,019 - app - INFO - Response returned: 200 OK
+2023-12-21 21:11:29,024 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:11:29,024 - app - INFO - Handling request: PUT /api/user/1/info
+2023-12-21 21:11:29,025 - app - INFO - Response returned: 200 OK
+2023-12-21 21:11:29,025 - app - INFO - Response returned: 200 OK
